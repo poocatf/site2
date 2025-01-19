@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media</title>
+  <style>
+    body {
+      background-color: #1a1a1a; /* Darker background */
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+    }
+    button {
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #d3d3d3;
+    }
+    .category {
+      margin-top: 40px;
+    }
+    .category h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- YouTube category -->
+    <div class="category">
+      <h2>YouTube</h2>
+      <a href="https://youtube.com/@aquabeary" target="_blank">
+        <button>Aquabeary</button>
+      </a>
+      <a href="https://youtube.com/@poocats" target="_blank">
+        <button>Poocat</button>
+      </a>
+    </div>
+
+    <!-- Twitter category -->
+    <div class="category">
+      <h2>Twitter</h2>
+      <a href="https://x.com/pooca2t" target="_blank">
+        <button>Poocat</button>
+      </a>
+    </div>
+
+    <!-- Our Sites category -->
+    <div class="category">
+      <h2>Our Sites</h2>
+      <a href="https://poocat.vercel.app" target="_blank">
+        <button>Poocat</button>
+      </a>
+      <a href="https://aquabeary.com" target="_blank">
+        <button>Aquabeary</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
