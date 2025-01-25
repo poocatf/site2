@@ -3,197 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mslolcat</title>
-    <style>
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            margin: 0;
-            display: flex;
-        }
-
-        .sidebar {
-            width: 200px;
-            background-color: #161b22;
-            padding: 20px;
-            height: 100vh;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .sidebar h1 {
-            color: #f0f6fc;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .sidebar .button {
-            display: block;
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 14px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .sidebar .discord {
-            color: #5865F2;
-            border: 2px solid #5865F2;
-            text-align: center;
-        }
-
-        .sidebar .discord:hover {
-            background-color: #5865F2;
-            color: #fff;
-        }
-
-        .sidebar .twitter {
-            color: #1DA1F2;
-            border: 2px solid #1DA1F2;
-            text-align: center;
-        }
-
-        .sidebar .twitter:hover {
-            background-color: #1DA1F2;
-            color: #fff;
-
-        }
-
-        .sidebar .showcasescript {
-            color: #FF6F6F;
-            border: 2px solid #FF6F6F;
-            text-align: center;
-        
-        }
-
-
-        .sidebar .showcasescript:hover {
-            background-color: #FF0000;
-            color: #FFFFFF;
-        }
-
-        .main {
-            flex-grow: 1;
-            padding: 40px;
-        }
-
-        .main h1 {
-            font-size: 36px;
-            color: #58a6ff;
-        }
-
-        .main h1 span:first-child {
-            background: linear-gradient(90deg, #6a0dad, #0000ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradient 3s ease infinite;
-            background-size: 200% 200%;
-        }
-
-        .main h1 span:last-child {
-            -webkit-background-clip: unset;
-            -webkit-text-fill-color: unset;
-            animation: none;
-        }
-
-        .main p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            cursor: pointer;
-            color: #58a6ff;
-        }
-
-        ul li a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        ul li:hover {
-            text-decoration: underline;
-        }
-
-        .fade-message {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #ff7b72;
-            animation: fadeOut 1s forwards;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #8b949e;
-        }
-    </style>
+    <title>Synapse Announcement</title>
+    <link rel="stylesheet" href="styles.css">
     <script>
-        function showTemporaryMessage() {
-            const message = document.createElement('div');
-            message.className = 'fade-message';
-            message.textContent = 'This doesn't exist.';
-            document.querySelector('.main').appendChild(message);
-
-            setTimeout(() => {
-                message.remove();
-            }, 3000);
+        function copyToClipboard() {
+            const code = "loadstring(game:HttpGet('https://raw.githubusercontent.com/poocatf/mslolcat/main/loader.lua'))()";
+            navigator.clipboard.writeText(code).then(() => {
+                alert("Code copied to clipboard!");
+            }).catch(() => {
+                alert("Failed to copy code.");
+            });
         }
     </script>
 </head>
 <body>
-    <div class="sidebar">
-        <h1>mslolcat</h1>
-        <a href="https://discord.gg/aSbDZ9nskZ" class="button discord">Discord</a>
-        <a href="https://x.com/pooca2t" class="button twitter">Twitter</a>
-       <a href="/media.html" class="button showcasescript">Developers</a>
-    </div>
-
-    <div class="main">
-        <section id="home">
-            <h1>Official Site For <span>MSlolcat</span> <span>&#128075;</span></h1>
-            <p>Supports your favourite executors.</p>
-            <h2>Modes Supported</h2>
-            <p>Supports, Floor 1, Hotel- & Lobby.</p>
-            <h2>Social Media</h2>
-            <ul>
-                <li><a href="https://discord.gg/aSbDZ9nskZ" target="_blank">Get Script</a></li>
-                <li onclick="showTemporaryMessage()">MSlolcat.exe</li>
-            </ul>
-
+    <div class="background">
+        <div class="container">
+            <header class="logo">
+                <h1><span class="syn">M</span><span class="yn">S</span><span class="napse">lolcat</span></h1>
+            </header>
+            <main>
+                <p class="intro">Let's cut to the chase: we will no longer continue updating MSlolcat. We have stopped updating the script but you can still use it, but, no more updates will come meaning future updates will not get patches.</p>
+                <p class="content">
+                    As important MSlolcat was for the growth and credence of our stuff, it became clear that we must expand our horizons and move on. In light of this new direction, we have decided to sunset MSlolcat and begin work on more ambitious projects. We are currently working on many very exciting things, which we hope to showcase soon.
+                </p>
+                <p class="closing">
+                    We want to thank our users for their support. It really has been a pleasure to serve you all. We are thrilled about what the future holds for us, and we hope that you will continue to follow our journey.
+                </p>
+                <p class="signature">Sincerely,<br>The MSlolcat team.</p>
+            </main>
             <footer>
-                Inspired by MSPAINT.
+                <button class="footer-button" onclick="copyToClipboard()">Copy Script Loadstring</button>
             </footer>
-        </section>
+        </div>
     </div>
 </body>
 </html>
+
+
