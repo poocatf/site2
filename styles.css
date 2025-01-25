@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+    background-color: #0c0c0c;
+    background-image: radial-gradient(#121212, #0c0c0c);
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    background-color: #121212;
+    border: 1px solid #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo styles */
+.logo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.logo .syn {
+    color: #ff4d4d;
+}
+
+.logo .yn {
+    color: #4d94ff;
+}
+
+.logo .napse {
+    color: #d1d1d1;
+}
+
+/* Text content styles */
+.intro,
+.content,
+.closing {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #4d94ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Signature */
+.signature {
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-button {
+    background-color: #1c1c1c; /* Keep the original dark background */
+    border: 1px solid #4d94ff; /* Retain the blue border */
+    color: #ffffff; /* White text */
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-weight: bold; /* Bold font for emphasis */
+    width: auto; /* Keep the width auto */
+    margin-top: 20px;
+}
+
+.footer-button:hover {
+    background-color: #4d94ff; /* Change to blue on hover */
+    color: #121212; /* Darker text when hovered */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.footer-button:active {
+    background-color: #388e3c; /* Green color when clicked */
+    transform: scale(1); /* Reset scale on click */
+}
+
+.footer-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #4d94ff; /* Blue glow effect when focused */
+}
+
